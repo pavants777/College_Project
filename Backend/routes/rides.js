@@ -17,3 +17,6 @@ router.patch('/:rideId/accept', async (req, res) => {
   const ride = await Ride.findByIdAndUpdate(req.params.rideId, { driver, status: 'Accepted' }, { new: true });
   res.send(ride);
 });
+
+
+module.exports = router;

@@ -11,3 +11,6 @@ router.post('/checkout', async (req, res) => {
   });
   res.send({ clientSecret: paymentIntent.client_secret });
 });
+
+
+module.exports = router
