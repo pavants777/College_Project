@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride Sharing App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ride Sharing App</h1>
+  </header>
+
+  <main>
+    <section id="rider">
+      <h2>Rider: Request a Ride</h2>
+      <form id="rideRequestForm">
+        <label for="pickup">Pickup Location:</label>
+        <input type="text" id="pickup" name="pickup" required>
+
+        <label for="dropoff">Dropoff Location:</label>
+        <input type="text" id="dropoff" name="dropoff" required>
+
+        <button type="submit">Request Ride</button>
+      </form>
+      <div id="rideStatus"></div>
+    </section>
+
+    <section id="driver">
+      <h2>Driver: Available Rides</h2>
+      <div id="rideRequests">
+        <!-- Ride requests will be dynamically loaded here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ride Sharing App © 2024</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
